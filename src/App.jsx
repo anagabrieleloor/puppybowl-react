@@ -20,10 +20,11 @@ function App() {
     <Routes>
         <Route path='/' element={<AllPlayers/>} />
         <Route path='/players/:id' element={<SinglePlayer />} />
+        <Route path='/newplayer' element={<NewPlayerForm />} />
     </Routes>
 </BrowserRouter>
 
-<NewPlayerForm />
+{/* <NewPlayerForm /> */}
     </>
   )
 }
