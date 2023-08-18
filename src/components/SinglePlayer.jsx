@@ -24,6 +24,22 @@ export default function SinglePlayer() {
         fetchSinglePlayer();
     },[]);
 
+    async function handleDelete(event) {
+        event.preventDefault ();
+        try {
+            const response = await fetch(`${API_URL}/players/${playerId}`, {
+                method: 'DELETE'
+            })
+            const result = await response.json()
+            return result; 
+            // window.location.reload();
+        } catch (err) {
+            console.error(`oopsies`, err
+            )
+        }
+    }
+
+
     return(
         <div>
             {player && ( 
@@ -44,6 +60,7 @@ export default function SinglePlayer() {
                 <img src="${player.imgUrl}"/>
             </p>
             <button onClick={() => navigate(`/`)}>Back</button>
+            <button onClick={handleDelete}>Delete</button>
             </>
             )}
             

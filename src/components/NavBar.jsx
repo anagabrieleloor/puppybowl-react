@@ -4,7 +4,7 @@ export default function NavBar() {
     return(
         <div>
         <Link to="/">All Players</Link>
-      <Link to="/players/:id">Single Player</Link>
+      {/* <Link to="/players/:id">Single Player</Link> */}
       <Link to="/newplayer">New Player</Link>
   
       
