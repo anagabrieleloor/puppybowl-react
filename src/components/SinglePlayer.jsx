@@ -41,7 +41,7 @@ export default function SinglePlayer() {
 
 
     return(
-        <div>
+        <div id = "singleplayer">
             {player && ( 
                 <>
             <p>

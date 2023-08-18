@@ -13,6 +13,9 @@ function App() {
   return (
     <>
     <BrowserRouter>
+    <div class="header">
+    <h1>˖⁺‧₊˚ ♡ ˚₊‧⁺˖Puppy Bowl˖⁺‧₊˚ ♡ ˚₊‧⁺˖</h1>
+  </div>
       <div id="navbar">
         <NavBar />
       </div>
